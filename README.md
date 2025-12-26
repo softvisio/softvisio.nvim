@@ -15,7 +15,7 @@ npm install --global @softvisio/cli
 ```lua
 return {
     {
-        "zdm/softvisio.nvim",
+        "softvisio/softvisio.nvim",
         dependencies = {
             "nvim-telescope/telescope.nvim",
         },
