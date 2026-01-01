@@ -4,7 +4,15 @@
 
 ## Requirements
 
-1. `@softvisio/cli` `npm` package, installed globally:
+1. `@softvisio/cli` `npm` package, installed globally.
+
+Add registry for `@softvisio` namespace to your `.npmrc`:
+
+```
+@softvisio:registry = https://npm.pkg.github.com/
+```
+
+Install `@softvisio/cli`:
 
 ```sh
 npm install --global @softvisio/cli
@@ -16,6 +24,7 @@ npm install --global @softvisio/cli
 return {
     {
         "softvisio/softvisio.nvim",
+        tag = "latest",
         dependencies = {
             "nvim-telescope/telescope.nvim",
         },
