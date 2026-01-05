@@ -1,5 +1,21 @@
 # Changelog
 
+### v1.0.0 (2026-01-05)
+
+**Migration notes:**
+
+See the list of the breaking changes below for details.
+
+**Breaking changes:**
+
+- \[MAJOR] feat!: create public release (● [a91fec9](https://github.com/softvisio/softvisio.nvim/commit/a91fec9); 👬 zdm)
+
+**Other changes:**
+
+- chore: fix package name (● [f1c2b33](https://github.com/softvisio/softvisio.nvim/commit/f1c2b33); 👬 zdm)
+
+Compare with the previous release: [v0.1.0](https://github.com/softvisio/softvisio.nvim/compare/v0.1.0...v1.0.0)
+
 ### v0.1.0 (2026-01-01)
 
 **New features:**
