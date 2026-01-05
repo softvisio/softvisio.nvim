@@ -1,5 +1,5 @@
 {
-    "name": "softvisio.nvim",
+    "name": "@softvisio/softvisio.nvim",
     "version": "0.1.0",
     "private": true,
     "description": "@softvisio/cli LSP Neovim integration",
