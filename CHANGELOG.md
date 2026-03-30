@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.0 (2026-03-30)
+
+**New features:**
+
+- \[MINOR] feat: migrate to nvim 0.12.0 (● [f0589d7](https://github.com/softvisio/softvisio.nvim/commit/f0589d7), [d2c2a85](https://github.com/softvisio/softvisio.nvim/commit/d2c2a85); 👬 zdm)
+
+Compare with the previous release: [v1.0.1](https://github.com/softvisio/softvisio.nvim/compare/v1.0.1...v1.1.0)
+
 ### v1.0.1 (2026-01-29)
 
 No changes since the previous release.
