@@ -15,7 +15,7 @@ local function do_request ( bufnr, method, params )
 
     if not client then return end
 
-    local res, e = client.request_sync( method, params, config.timeout )
+    local res, e = client:request_sync( method, params, config.timeout )
 
     if not res then
         return
