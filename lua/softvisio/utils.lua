@@ -85,4 +85,37 @@ M = {
     end,
 }
 
+M.has_treesitter = function ( bufnr )
+    if not bufnr then
+        bufnr = vim.api.nvim_get_current_buf()
+    end
+
+    local highlighter = require( "vim.treesitter.highlighter" )
+
+    if highlighter.active[ bufnr ] then
+        return true
+    else
+        return false
+    end
+end
+
+M.parse_treesitter = function ( bufnr, callback )
+    local parser = vim.treesitter.get_parser( bufnr )
+
+    if not parser then return end
+
+    -- XXX https://neovim.io/doc/user/treesitter.html#LanguageTree%3Aparse()
+    parser:parse( true, callback )
+end
+
+M.update_folds = function ( bufnr )
+    if M.has_treesitter( bufnr ) then
+        M.parse_treesitter( bufnr, function ()
+            vim.cmd.normal( "zx" )
+        end )
+    else
+       vim.cmd.normal( "zx" )
+    end
+end
+
 return M

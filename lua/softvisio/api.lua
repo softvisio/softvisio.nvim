@@ -89,8 +89,6 @@ M = {
 
             vim.api.nvim_buf_set_lines( bufnr, #lines, -1, false, {} )
 
-            vim.b[ bufnr ].folds_update_pending = false
-
             -- restore cursor position
             vim.fn.setpos( ".", cursor_pos )
 
@@ -100,9 +98,10 @@ M = {
             -- update folds
             -- NOTE: need to call it only after treesitter finish parsing
             -- currently it is not reliable
-            vim.schedule( function()
-                vim.cmd.normal( "zx" )
-            end )
+
+            -- update folds
+            vim.b[ bufnr ].folds_update_pending = false
+            require( "utils" ).update_folds( bufnr )
         end
 
         -- update diagnostics
