@@ -96,10 +96,6 @@ M = {
             vim.cmd.normal( "zz" )
 
             -- update folds
-            -- NOTE: need to call it only after treesitter finish parsing
-            -- currently it is not reliable
-
-            -- update folds
             vim.b[ bufnr ].folds_update_pending = false
             require( "utils" ).update_folds( bufnr )
         end
