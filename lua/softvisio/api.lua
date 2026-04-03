@@ -77,39 +77,21 @@ M = {
         if res.meta.isModified then
             local lines = vim.fn.split( res.data, "\r\n\\|\r\\|\n" )
             local cursor_pos = vim.fn.getpos( "." )
-            local syntax = vim.bo[ bufnr ].syntax == "on" and true or false
-            local foldmethod = vim.wo[ winid ].foldmethod
 
-            if syntax then
-                vim.bo[ bufnr ].syntax = "off"
-            end
-
-            vim.wo[ winid ].foldmethod = "manual"
-
+            -- update buffer
             vim.api.nvim_buf_set_lines( bufnr, 0, -1, false, {} )
             vim.api.nvim_buf_set_lines( bufnr, 0, #lines, false, lines )
-
-            -- refresh treesitter, if used
-            if utils.has_treesitter() then
-                utils.parse_treesitter()
-            end
-
-            -- refresh syntax, if used
-            if syntax then
-                vim.bo[ bufnr ].syntax = "on"
-                vim.cmd( "syn sync fromstart" )
-            end
 
             -- restore cursor position
             vim.fn.setpos( ".", cursor_pos )
 
-            -- open fold under the cursor
-            vim.wo[ winid ].foldmethod = foldmethod
-            vim.cmd.normal( "zM" )
-            vim.cmd.normal( "zv" )
-
-            -- center cursor on the screen
+            -- center cursor line on the screen
             vim.cmd.normal( "zz" )
+
+            -- update folds
+            vim.schedule( function()
+                vim.cmd.normal( "zx" )
+            end )
         end
 
         -- update diagnostics
