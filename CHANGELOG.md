@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.4 (2026-04-05)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix folds update (● [8445d55](https://github.com/softvisio/softvisio.nvim/commit/8445d55), [126ba26](https://github.com/softvisio/softvisio.nvim/commit/126ba26), [4d085f5](https://github.com/softvisio/softvisio.nvim/commit/4d085f5); 👬 zdm)
+
+Compare with the previous release: [v1.1.3](https://github.com/softvisio/softvisio.nvim/compare/v1.1.3...v1.1.4)
+
 ### v1.1.3 (2026-04-03)
 
 **Bug fixes:**
