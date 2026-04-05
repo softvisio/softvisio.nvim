@@ -90,7 +90,9 @@ M = {
 
             -- update folds
             vim.b[ bufnr ].folds_update_pending = false
-            utils.update_folds( bufnr )
+            vim.schedule( function ()
+                utils.update_folds( bufnr )
+            end )
         end
 
         -- update diagnostics
