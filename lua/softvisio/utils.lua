@@ -103,7 +103,7 @@ M = {
 
         if not parser then return end
 
-        -- XXX https://neovim.io/doc/user/treesitter.html#LanguageTree%3Aparse()
+        -- DOCS: https://neovim.io/doc/user/treesitter.html#LanguageTree%3Aparse()
         parser:parse( true, callback )
     end,
 
