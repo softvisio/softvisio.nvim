@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.5 (2026-04-20)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update .editorconfig (● [6bb10b0](https://github.com/softvisio/softvisio.nvim/commit/6bb10b0); 👬 zdm)
+
+Compare with the previous release: [v1.1.4...v1.1.5](https://github.com/softvisio/softvisio.nvim/compare/v1.1.4...v1.1.5)
+
 ### v1.1.4 (2026-04-05)
 
 **Bug fixes:**
