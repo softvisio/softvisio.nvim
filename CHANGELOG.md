@@ -1,5 +1,15 @@
 # Changelog
 
+### v1.1.6 (2026-04-20)
+
+**Other changes:**
+
+- chore: rename package (● [33f6432](https://github.com/neovim-plugins/softvisio.nvim/commit/33f6432), [f23290b](https://github.com/neovim-plugins/softvisio.nvim/commit/f23290b); 👬 zdm)
+
+- chore(metadata): update package metadata (● [64c7fb8](https://github.com/neovim-plugins/softvisio.nvim/commit/64c7fb8); 👬 zdm)
+
+Compare with the previous release: [v1.1.5...v1.1.6](https://github.com/neovim-plugins/softvisio.nvim/compare/v1.1.5...v1.1.6)
+
 ### v1.1.5 (2026-04-20)
 
 **Code refactoring:**
