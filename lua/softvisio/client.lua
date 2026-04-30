@@ -51,7 +51,7 @@ M = {
                     cmd = vim.lsp.rpc.connect( config.hostname, config.port ),
                     on_error = function ( code, e )
                         if e == "ECONNRESET" then
-                            vim.lsp.stop_client( client.id, true )
+                            client.stop( true )
 
                             client = nil
                         end
