@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.10 (2026-05-07)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename cli.config.yaml to scli.config.yaml (● [17595ff](https://github.com/neovim-plugins/softvisio.nvim/commit/17595ff); 👬 zdm)
+
+Compare with the previous release: [v1.1.9...v1.1.10](https://github.com/neovim-plugins/softvisio.nvim/compare/v1.1.9...v1.1.10)
+
 ### v1.1.9 (2026-05-07)
 
 **Code refactoring:**
