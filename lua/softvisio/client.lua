@@ -20,7 +20,7 @@ local function test_rpc ()
 end
 
 local function spawn_Server ()
-    local cmd = vim.fn.has( "win32" ) == 1 and "softvisio-cli.cmd" or "softvisio-cli"
+    local cmd = vim.fn.has( "win32" ) == 1 and "scli.cmd" or "scli"
 
     server = vim.fn.jobstart( cmd .. " lsp start", {
         detach = false,
