@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.9 (2026-05-07)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename softvisio-cli to scli (● [42bb0bb](https://github.com/neovim-plugins/softvisio.nvim/commit/42bb0bb); 👬 zdm)
+
+Compare with the previous release: [v1.1.8...v1.1.9](https://github.com/neovim-plugins/softvisio.nvim/compare/v1.1.8...v1.1.9)
+
 ### v1.1.8 (2026-05-01)
 
 **Bug fixes:**
