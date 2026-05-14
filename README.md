@@ -31,16 +31,16 @@ return {
         cmd = "S",
         keys = {
             {
-                "<Leader>sd",
-                "<CMD>S lint format<CR>",
-                mode = { "n", "i", "v", "s" },
-                desc = "Lint buffer using default rules",
-            },
-            {
-                "<Leader>sf",
+                "<Leader>ss",
                 "<CMD>S lint lint<CR>",
                 mode = { "n", "i", "v", "s" },
                 desc = "Lint buffer",
+            },
+            {
+                "<Leader>sf",
+                "<CMD>S lint format<CR>",
+                mode = { "n", "i", "v", "s" },
+                desc = "Lint buffer using default rules",
             },
             {
                 "<Leader>sc",
