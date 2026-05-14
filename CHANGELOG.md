@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.11 (2026-05-14)
+
+**Other changes:**
+
+- docs: update (● [43ec942](https://github.com/neovim-plugins/softvisio.nvim/commit/43ec942); 👬 zdm)
+
+Compare with the previous release: [v1.1.10...v1.1.11](https://github.com/neovim-plugins/softvisio.nvim/compare/v1.1.10...v1.1.11)
+
 ### v1.1.10 (2026-05-07)
 
 **Code refactoring:**
